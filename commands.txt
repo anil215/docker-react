@@ -1,0 +1,3 @@
+docker run -p 3000:3000 anil215/fronend
+docker build -f Dockerfile.dev -t anil215/frontend .
+docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app anil215/frontend
